@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This is a template for Web App Setup -->
+<!-- Author : @CashLee李秉骏 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name='description' content='' >
+<meta name='author' content='' >
+<title>hello world</title>
+<link rel='stylesheet' type='text/css' href='css/style.css' />
+</head>
+<body>
+
+  <div id='pop-msg'>
+    <p>正在获取</p><p>当前地理信息...</p>
+  </div>
+
+  <div id='select-form'>
+
+    <div id="provinceValue" class="selectValue">
+      <a>加载中...</a>
+      <select id='province'>
+        <option>请选择省份</option>
+      </select>
+    </div>
+
+    <div id="cityValue" class="selectValue">
+      <a>加载中...</a>
+      <select id="city">
+        <option id='city_val' value='0'>请选择城市</option>
+      </select>
+    </div>
+
+  </div>
+</body>
+<script src="lib/jq.mobi.min.js"></script>
+<script type='text/javascript' language='javascript' src="js/app.js"></script>
+</html>
