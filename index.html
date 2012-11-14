@@ -33,6 +33,9 @@
       </select>
     </div>
 
+    <input id='applat' style='display:none'  type='text' value='<?php echo substr($_GET[latitude],0,8) ?>'  placeholder='app-lat'/>
+    <input id='applng' style='display:none'  type='text' value='<?php echo substr($_GET[longitude],0,8).substr($_GET[longtitude],0,8) ?>'  placeholder='app-lng'/>
+
   </div>
 </body>
 <script src="lib/jq.mobi.min.js"></script>

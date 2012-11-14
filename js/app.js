@@ -12,16 +12,22 @@ var _default_lng = '113.3958';
 
 var getPositionModule = {
   "getPosition" : function (){
-    _current_lat = $('#applat').val();
-    _current_lng = $('#applng').val();
+    /* 这里应该从url中获取 */
     /* 可以将_current_lat or _current_lng 转为整型，再做出判断 */
-    if ( parseInt(_current_lat) && parseInt(_current_lng) ){
-      getPositionModule.requestPosition( _current_lat, _current_lng );
+    if( document.URL.split("?").length == 1 ){
+      getPositionModule.requestPosition( _default_lat , _default_lng );
     }
     else{
-      popUpModule.show("定位失败","获取默认地址");
-      setTimeout( function (){ popUpModule.hide(); }, 1000 );
-      getPositionModule.requestPosition( _default_lat , _default_lng );
+      _current_lat = document.URL.split("?")[1].split("&")[0].split("=")[1];
+      _current_lng = document.URL.split("?")[1].split("&")[1].split("=")[1];
+      if ( parseInt(_current_lat) && parseInt(_current_lng)  ){
+        getPositionModule.requestPosition( _current_lat, _current_lng );
+      }
+      else{
+        popUpModule.show("定位失败","获取默认地址");
+        setTimeout( function (){ popUpModule.hide(); }, 1000 );
+        getPositionModule.requestPosition( _default_lat , _default_lng );
+      }
     }
   },
   "requestPosition" : function ( the_lat , the_lng ){
