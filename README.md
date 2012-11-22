@@ -13,26 +13,23 @@
 <h1>How to use it</h1>
 <p>使用方法非常简单，首先将所需要的库添加到html文件中</p>
 <pre>
-<!--
 
 style : 
-  <link rel='stylesheet' type='text/css' href='css/style.css' />
+  &lt;link rel='stylesheet' type='text/css' href='css/style.css' /&gt;
 
 Javascript :
-  <script src="lib/jq.mobi.min.js"></script>
-  <script type='text/javascript' language='javascript' src="js/app.js"></script>
+  &lt;script src="lib/jq.mobi.min.js"&gt; &lt;/script&gt;
+  &lt;script type='text/javascript' language='javascript' src="js/app.js"&gt; &lt;/script&gt;
 
--->
 </pre>
 <p>然后在body中添加必要的元素<p>
 <pre>
-<!--
 
-  <div id=pop-msg>
+  &lt;div id=pop-msg &gt;
     <p>正在获取</p><p>当前地理信息...</p>
-  </div>
+  &lt;/div&gt;
 
-  <div id=select-form>
+  &lt;div id=select-form&gt;
 
     <div id=provinceValue class=selectValue>
       <a>加载中...</a>
@@ -48,14 +45,12 @@ Javascript :
       </select>
     </div>
 
-  </div>
+    <!-- 作为调试用，获取当前地理位置的latitude 以及 longitude  
+      <input id=applat style=display:none  type=text value=<?php echo substr($_GET[latitude],0,8) ?>  placeholder=app-lat/>
+      <input id=applng style=display:none  type=text value=<?php echo substr($_GET[longitude],0,8).substr($_GET[longtitude],0,8) ?>  placeholder=app-lng/>
+    -->
 
--->
-
-<!-- 作为调试用，获取当前地理位置的latitude 以及 longitude  
-  <input id=applat style=display:none  type=text value=<?php echo substr($_GET[latitude],0,8) ?>  placeholder=app-lat/>
-  <input id=applng style=display:none  type=text value=<?php echo substr($_GET[longitude],0,8).substr($_GET[longtitude],0,8) ?>  placeholder=app-lng/>
--->
+  &lt;/div&gt;
 
 </pre>
 <p>你已经没有更多的东西要处理了 :-) </p>
