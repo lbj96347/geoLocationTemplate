@@ -30,19 +30,19 @@ Javascript :
   &lt;/div&gt;
 
   &lt;div id=select-form&gt;
-    <div id=provinceValue class=selectValue>
-      <a>加载中...</a>
-      <select id=province>
-        <option>请选择省份</option>
-      </select>
-    </div>
+    &lt;div id=provinceValue class=selectValue&gt;
+      &lt;a&gt;加载中...&lt;/a&gt;
+      &lt;select id=province&gt;
+        &lt;option&gt;请选择省份&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
 
-    <div id=cityValue class=selectValue>
-      <a>加载中...</a>
-      <select id=city>
-        <option id=city_val value=0>请选择城市</option>
-      </select>
-    </div>
+    &lt;div id=cityValue class=selectValue&gt;
+      &lt;a&gt;加载中...&lt;/a&gt;
+      &lt;select id=city&gt;
+        &lt;option id=city_val value=0&gt;请选择城市&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
 
     <!-- 作为调试用，获取当前地理位置的latitude 以及 longitude  
       <input id=applat style=display:none  type=text value=<?php echo substr($_GET[latitude],0,8) ?>  placeholder=app-lat/>
