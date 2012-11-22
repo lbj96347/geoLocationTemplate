@@ -12,6 +12,8 @@ var _current_lng;
 var _default_lat = '23.05413';
 var _default_lng = '113.3958';
 
+var _server_link = 'server/getLocation.php';
+
 var getPositionModule = {
   "getPosition" : function (){
     /* 这里应该从url中获取 */
@@ -34,7 +36,7 @@ var getPositionModule = {
   },
   "requestPosition" : function ( the_lat , the_lng ){
     var positionRequestSetting = {
-      url: 'server/getLocation.php',
+      url: _server_link,
       type: 'POST',
       data: 'lat='+ the_lat +'&lng=' + the_lng ,
       error: function (){  popUpModule.error(); },
