@@ -26,11 +26,10 @@ Javascript :
 <pre>
 
   &lt;div id=pop-msg &gt;
-    <p>正在获取</p><p>当前地理信息...</p>
+    &lt;p&gt;正在获取 &lt;/p&gt;&lt;p&gt;当前地理信息...&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div id=select-form&gt;
-
     <div id=provinceValue class=selectValue>
       <a>加载中...</a>
       <select id=province>
@@ -49,7 +48,6 @@ Javascript :
       <input id=applat style=display:none  type=text value=<?php echo substr($_GET[latitude],0,8) ?>  placeholder=app-lat/>
       <input id=applng style=display:none  type=text value=<?php echo substr($_GET[longitude],0,8).substr($_GET[longtitude],0,8) ?>  placeholder=app-lng/>
     -->
-
   &lt;/div&gt;
 
 </pre>
