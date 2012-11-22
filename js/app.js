@@ -1,3 +1,5 @@
+/* 地理位置信息库，注意北京市，天津市直辖市，筛选值 */
+
 var _default_city = "广州市";
 var _default_province = "广东省";
 
